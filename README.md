@@ -1,20 +1,18 @@
-<header style="display: flex; justify-content: space-around;">
-<p align="left">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="Nest Logo" /></a>
-</p>
-<h1 style="text-align: center">Yape Code Challenge: By JalzDeLezZ</h1>
+<header style="display: flex; justify-content: space-around; align-items: center">
+  <p align="left">
+    <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="90" alt="Nest Logo" /></a>
+    
+<h2 style="text-align: center;">Yape Code Challenge: By JalzDeLezZ</h1>
+  </p>
+  <section style="text-align: center;">
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+  <a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Followers"></a>
+  </section>
 </header>
-<section style="text-align: center;">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-<a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Followers"></a>
-</section>
 
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Running the app
 
@@ -31,6 +29,14 @@ $ nest start transaction
 $ nest start anti-fraud
 ```
 
+---
+
+<p align="center">
+<img width="90%" src="./src/one.png"/>
+<img width="90%" src="./src/two.png"/>
+<img width="90%" src="./src/three.png"/>
+<img width="90%" src="./src/fourth.png"/>
+</p>
 <hr/><br/>
 
 ## Challenge Description
@@ -122,6 +128,7 @@ $ nest g app port-services
 $ npm i --save @nestjs/microservices
 $ npm install --save @nestjs/typeorm typeorm pg
 $ npm i kafkajs
+$ npm install dotenv --save
 ```
 
 </details><br/>
