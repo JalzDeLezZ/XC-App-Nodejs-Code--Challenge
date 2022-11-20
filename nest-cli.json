@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/yape-app-nodejs-codechallenge/src",
+  "monorepo": true,
+  "root": "apps/yape-app-nodejs-codechallenge",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/yape-app-nodejs-codechallenge/tsconfig.app.json"
+  },
+  "projects": {
+    "yape-app-nodejs-codechallenge": {
+      "type": "application",
+      "root": "apps/yape-app-nodejs-codechallenge",
+      "entryFile": "main",
+      "sourceRoot": "apps/yape-app-nodejs-codechallenge/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/yape-app-nodejs-codechallenge/tsconfig.app.json"
+      }
+    },
+    "transaction": {
+      "type": "application",
+      "root": "apps/transaction",
+      "entryFile": "main",
+      "sourceRoot": "apps/transaction/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/transaction/tsconfig.app.json"
+      }
+    },
+    "anti-fraud": {
+      "type": "application",
+      "root": "apps/anti-fraud",
+      "entryFile": "main",
+      "sourceRoot": "apps/anti-fraud/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/anti-fraud/tsconfig.app.json"
+      }
+    },
+    "port-services": {
+      "type": "application",
+      "root": "apps/port-services",
+      "entryFile": "main",
+      "sourceRoot": "apps/port-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/port-services/tsconfig.app.json"
+      }
+    }
+  }
+}
