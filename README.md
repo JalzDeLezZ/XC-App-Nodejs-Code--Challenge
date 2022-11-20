@@ -19,14 +19,25 @@
 ```bash
 ## Inplementation
 1. npm install
-2. docker-compose up -d
-3. touch .env
-4. copy .env.example to .env
+2. rename .env.example to .env
+3. docker-compose up -d
 
 # execute proyect
 $ nest start port-services
 $ nest start transaction
 $ nest start anti-fraud
+
+# routes
+http://localhost:3000/transaction
+
+# body
+{
+  "accountExternalIdDebit": "",
+  "accountExternalIdCredit": "aaaaaa42f-a42f-4a57-97bd-4a57llllllll",
+  "tranferTypeId": 2,
+  "value": 333
+}
+
 ```
 
 ---
