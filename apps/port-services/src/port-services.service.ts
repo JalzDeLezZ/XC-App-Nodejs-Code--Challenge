@@ -6,7 +6,7 @@ import { DataCreate, ResponseTransactionCreate } from './interfaces/creation';
 @Injectable()
 export class ApiGatewayService implements OnModuleInit {
   constructor(
-    @Inject('TRANSACTION_SERVICE')
+    @Inject('MOTIONS_SERVICE')
     protected readonly gatewayService: ClientKafka,
   ) {}
 

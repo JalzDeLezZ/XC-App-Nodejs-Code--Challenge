@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { status } from '../type/typeTransaction';
+import { status } from '../interfaces/typeTransaction';
 
 @Entity()
 export class Transaction {

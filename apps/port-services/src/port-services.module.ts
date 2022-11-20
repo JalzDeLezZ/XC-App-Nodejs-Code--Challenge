@@ -8,14 +8,14 @@ import { ApiGatewayService } from './port-services.service';
     ClientsModule.register([
       {
         transport: Transport.KAFKA,
-        name: 'TRANSACTION_SERVICE',
+        name: 'MOTIONS_SERVICE',
         options: {
           client: {
             clientId: 'transaction',
             brokers: ['localhost:9092'],
           },
           consumer: {
-            groupId: `transaction_group`,
+            groupId: `grp_transaction`,
           },
         },
       },

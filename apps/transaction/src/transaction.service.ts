@@ -2,8 +2,8 @@ import { Injectable, Inject } from '@nestjs/common';
 import { ClientKafka } from '@nestjs/microservices';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { map, Observable } from 'rxjs';
-import { Transaction } from './entities/transaction.entity';
-import { ResponseTransactionCreate } from './type/reponseType';
+import { Transaction } from './table/transaction.entity';
+import { ResponseTransactionCreate } from './interfaces/reponseType';
 import { TransactionRepository } from './repository/transaction.repository';
 
 @Injectable()

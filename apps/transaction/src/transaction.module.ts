@@ -4,7 +4,7 @@ import { DataSource } from 'typeorm';
 import { TransactionController } from './transaction.controller';
 import { Transport, ClientsModule } from '@nestjs/microservices';
 import { TransactionService } from './transaction.service';
-import { Transaction } from './entities/transaction.entity';
+import { Transaction } from './table/transaction.entity';
 import { TransactionRepository } from './repository/transaction.repository';
 
 @Module({
@@ -19,7 +19,7 @@ import { TransactionRepository } from './repository/transaction.repository';
             brokers: ['localhost:9092'],
           },
           consumer: {
-            groupId: 'anti-fraud_group',
+            groupId: 'grp_antiFraud',
           },
         },
       },
@@ -28,9 +28,9 @@ import { TransactionRepository } from './repository/transaction.repository';
       type: 'postgres',
       host: process.env.DB_HOST,
       port: parseInt(process.env.DB_PORT),
-      username: 'postgres',
-      password: `123456789`,
-      database: 'db_transaction',
+      username: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
       autoLoadEntities: true,
       entities: [Transaction],
       synchronize: true,

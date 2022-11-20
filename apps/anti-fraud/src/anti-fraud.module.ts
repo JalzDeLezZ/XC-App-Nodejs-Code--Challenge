@@ -7,7 +7,7 @@ import { AntiFraudService } from './anti-fraud.service';
   imports: [
     ClientsModule.register([
       {
-        name: 'TRANSACTION_SERVICE',
+        name: 'MOTIONS_SERVICE',
         transport: Transport.KAFKA,
         options: {
           client: {
@@ -15,7 +15,7 @@ import { AntiFraudService } from './anti-fraud.service';
             brokers: ['localhost:9092'],
           },
           consumer: {
-            groupId: 'transaction_group',
+            groupId: 'grp_transaction',
           },
         },
       },

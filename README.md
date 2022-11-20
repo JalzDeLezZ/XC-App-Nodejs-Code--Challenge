@@ -19,11 +19,11 @@
 ## Running the app
 
 ```bash
-## installation
-$ npm install
-
-## execute container
-$ docker-compose up -d
+## Inplementation
+1. npm install
+2. docker-compose up -d
+3. touch .env
+4. copy .env.example to .env
 
 # execute proyect
 $ nest start port-services
