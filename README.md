@@ -1,5 +1,5 @@
-<header style="display: flex; justify-content: space-around; align-items: center">
-  <p align="left">
+<header>
+  <p align="center">
     <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="90" alt="Nest Logo" /></a>
     
 <h2 style="text-align: center;">Yape Code Challenge: By JalzDeLezZ</h1>
